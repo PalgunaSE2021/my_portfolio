@@ -1,8 +1,11 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { Routes, provideRouter } from '@angular/router';
 
-import { routes } from './app.routes';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HomeComponent } from './home/home.component';
+
+export const routes: Routes = [{ path: 'home', component: HomeComponent }];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+  providers: [provideRouter(routes), provideAnimationsAsync()],
 };
