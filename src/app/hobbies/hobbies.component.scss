@@ -1,0 +1,25 @@
+.hobbies {
+  display: flex;
+  flex-direction: column;
+
+  .cards-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .cards-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hobby-card {
+      display: flex;
+      width: 50%;
+      min-width: 280px;
+    }
+
+    .hobby-component {
+      width: 100%;
+    }
+  }
+}

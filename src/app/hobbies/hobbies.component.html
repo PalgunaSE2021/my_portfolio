@@ -1,0 +1,12 @@
+<div class="hobbies" id="hobbiesComponent">
+  <span>My Hobbies</span>
+  <div class="cards-block">
+    <div class="hobby-card" *ngFor="let hobby of allHobbies">
+      <app-hobby-card
+        class="hobby-component"
+        [content]="hobby.content"
+        [header]="hobby.header"
+      ></app-hobby-card>
+    </div>
+  </div>
+</div>
