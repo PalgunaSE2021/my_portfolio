@@ -2,4 +2,22 @@ h1.specialHeader {
   padding-bottom: 10px;
   justify-content: center;
   display: flex;
+  text-shadow: 2px 2px green;
+}
+
+.border1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+iframe {
+  width: 45%;
+  height: 500px;
+  border: none;
+}
+
+.border {
+  width: 2px;
+  background: linear-gradient(to bottom, red, orange, yellow);
 }

@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: row;
   align-items: start;
+  background-image: linear-gradient(white, #9aedde);
+
+  .profileHeading {
+    display: flex;
+    justify-content: center;
+    text-decoration: double;
+  }
 
   .profile-image-container {
     display: flex;
     flex-direction: column;
-
-    .profile-name {
-      font-size: 24px;
-      font-weight: bold;
-      color: beige;
-    }
 
     .profile-image {
       width: auto;
@@ -26,6 +27,7 @@
     align-items: start;
     justify-content: start;
     margin-left: 0;
+    font-family: serif;
 
     .personal-info-header {
       font-size: 20px;
