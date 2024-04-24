@@ -1,12 +1,10 @@
-<div class="hobbies" id="hobbiesComponent">
-  <span class="hobbyHeading">My Hobbies</span>
-  <div class="cards-block">
-    <div class="hobby-card" *ngFor="let hobby of allHobbies">
-      <app-hobby-card
-        class="hobby-component"
-        [content]="hobby.content"
-        [header]="hobby.header"
-      ></app-hobby-card>
+<div class="hobby-container" id="hobbiesComponent">
+  <div class="hobby-heading">My Hobbies</div>
+  <div class="container">
+    <div *ngFor="let hobby of allHobbies" class="card-web card hover-up">
+      <span class="card-title">{{ hobby.header }}</span>
+      <span class="horizontal-divider"></span>
+      <span class="card-text">{{ hobby.content }}</span>
     </div>
   </div>
 </div>

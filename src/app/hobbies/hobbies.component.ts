@@ -17,20 +17,22 @@ export class HobbiesComponent implements OnInit {
   ngOnInit(): void {
     this.allHobbies = [
       {
-        content: 'C1',
-        header: 'Header of first hobby',
+        content:
+          'I love tinkering with web development in my spare time, building websites and learning new skills along the way. I enjoy exploring various frontend libraries to expand my toolkit and discover new ways to enhance user experiences.',
+        header: 'Web development',
       },
       {
-        content: 'C2',
-        header: 'H2',
+        content: 'My favorite pastime, my passion, my escape.',
+        header: 'Badminton',
       },
       {
-        content: 'C3',
-        header: 'H3',
+        content: 'I love diving into the water and feeling free.',
+        header: 'Swimming',
       },
       {
-        content: 'C4',
-        header: 'H4',
+        content:
+          ' I enjoy experimenting with flavors and creating delicious meals.',
+        header: 'Cooking',
       },
     ];
   }

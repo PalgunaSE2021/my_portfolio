@@ -1,34 +1,80 @@
-.hobbies {
+.hobby-container {
   display: flex;
   flex-direction: column;
 
-  .hobbyHeading {
+  .hobby-heading {
     display: flex;
-    justify-content: start;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: serif;
-    font-weight: 25px solid grey;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 500;
   }
 
-  .cards-block {
+  .container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 
-    .cards-row {
+    .card-web {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: 24px;
+      margin-left: 24px;
+      padding: 24px;
+      border-radius: 8px;
+      background-image: linear-gradient(#cedff3, #96c2f8);
+      width: 360px;
+      height: 260px;
+      align-items: center;
+
+      .card-title {
+        color: #000;
+        margin-top: 8px;
+        font-size: 18px;
+        margin-bottom: 16px;
+        font-weight: 500;
+      }
+
+      .horizontal-divider {
+        height: 1px;
+        background-color: #0b2545;
+        width: 60%;
+      }
+
+      .card-text {
+        color: #000;
+        font-size: 16px;
+        margin-top: 16px;
+        font-family: serif;
+      }
     }
 
-    .hobby-card {
-      display: flex;
-      width: 50%;
-      min-width: 280px;
+    .hover-up {
+      top: 0;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+    }
+    .hover-up:hover {
+      box-shadow: 0 8px 8px #5199f0;
+      top: -2px;
     }
 
-    .hobby-component {
+    .hover-line:hover::before {
       width: 100%;
+    }
+    .hover-line::before {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #0b2545;
+      transition: all 0.2s ease-in-out;
     }
   }
 }
